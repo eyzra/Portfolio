@@ -1,3 +1,5 @@
+/*=========RESET STYLES============*/
+
 *{
     padding: 0;
     margin: 0;
@@ -211,6 +213,9 @@ img {
     display: block; 
 }
 
+
+/*==========TYPPOGRAPHY STYLES================*/
+
 html {
     font-size: 62.5%;
     /* background: #101010;  */
@@ -271,6 +276,9 @@ p {
     font-size: 1.6rem; 
 }
 
+
+/*=========GLOBAL STYLES======================*/
+
 body{
     font-family: 'Viga', sans-serif;
     font-weight: 500;
@@ -280,10 +288,31 @@ body{
     height: 100%;
 }
 
+.fab{
+    font-family: "Font Awesome 5 Brands";
+}
+
+.fa, .fab, .fad, .fal, .far, .fas, .devicon{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
 .wrapper{
     max-width: 144rem;
     margin: 1rem auto;
     width: 90%;
+}
+
+#particles-js canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
 }
   
 i {
@@ -293,6 +322,12 @@ i {
 
 i:active, i:hover {
     color: #758da7;
+}
+
+footer {
+    position: sticky;
+    text-align: center;
+    margin: 2rem auto; 
 }
 
 .sign{
@@ -317,8 +352,7 @@ i:active, i:hover {
     cursor: pointer;
 }
 
-
-
+/*=============NAVIGATION BAR===============*/
 .navBar{
     display: flex;
     flex-direction: column;
@@ -327,331 +361,6 @@ i:active, i:hover {
     z-index: 100;
     justify-content: space-between;
 }
-
-
-footer {
-    position: sticky;
-    text-align: center;
-    margin: 2rem auto; 
-}
-
- .home {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-  
-
-.about-title .hand{
-    animation-name: wave;
-    animation-iteration-count: infinite;
-    transition: wave .5s ease-in-out;
-    animation-duration: 1.7s;
-}
-
-@keyframes wave{
-    0%{
-      transform: rotate(40deg);
-    }
-
-    50%{
-      transform: rotate(-50deg);
-    }
-    100%{
-      transform: rotate(50deg);
-    }
-}
-
-
-
-@media only screen and (max-width:50em){
-    about-title i{
-        position: relative;
-        right: 0;
-    }
-}
-
-.about-title {
-    font-size: 4rem;
-    text-align: center; 
-}
-  
-.about-info {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5rem 0;
-    justify-content: center; 
-}
-
-
-@media only screen and (max-width: 50em) {
-    .about-info {
-    flex-direction: column; 
-    } 
-}
-
-.about-img img{
-    border-radius: 50%;
-}
-
-.about-img {
-    width: 30%; 
-}
-
-@media only screen and (max-width: 56.25em) {
-    .about-img {
-        width: 35%; 
-    }
-}
-
-
-@media only screen and (max-width: 50em) {
-    .about-img {
-    width: 65%;
-    align-self: center; 
-    } 
-}
-
-.about-text {
-    width: 50%;
-    margin-left: 7%; 
-}
-
-@media only screen and (max-width: 50em) {
-    .about-text {
-    width: 78%;
-    text-align: center;
-    margin-top: 3rem;
-    margin-left: 0;
-    align-self: center; 
-    } 
-}
-
-.about-details {
-    margin-bottom: 3rem; 
-}
-
-@media only screen and (max-width: 50em) {
-    .about-details {
-        margin-bottom: 0rem; 
-    } 
-}
-
-.about-details p{
-    border-bottom: 2px solid darkblue;
-    margin-bottom: 0;
-    padding-bottom: 1.5rem; 
-}
-
-.about-details p {
-    margin: 3rem 0; 
-}
-
-@media only screen and (max-width: 50em) {
-    .about-details p {
-        margin: 1rem 0; 
-    } 
-}
-
-.about-links {
-    display: flex; 
-}
-
-.about-links ul{
-    flex-direction: row;
-}
-
-@media only screen and (max-width: 50em) {
-    .about__links {
-        justify-content: center;
-        flex-direction: column; 
-    } 
-}
-
-.about-links ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-}
-
-.about-links ul:before {
-    background-color: rgba(170, 170, 170, 0.454);
-    content: '';
-    height: 2px;
-    margin-right: 3rem;
-    width: 8rem; 
-}
-@media only screen and (max-width: 50em) {
-    .about-links ul {
-        margin-top: 3rem;
-        align-self: center; 
-}
-    .about-links ul:before {
-        display: none; 
-    } 
-    .about-links{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.about-icons {
-    font-size: 2rem; 
-}
-
-.about-icons:not(:last-child) {
-    margin-right: 2rem; 
-}
-
-
-.skills-section{
-    color: aqua;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-}
-
-
-
-.skills-title{
-    font-family: "Pacifico", cursive;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.skill-set{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 6rem;
-    text-align: center;
-    margin: 5rem auto;
-}
-
-.dev-icon{
-    flex-basis: 20%;
-    margin: 2rem 0;
-    padding: 0 2rem; /*Added this line to increase more space between icon*/
-}
-
-.wrap{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
- }
-
- @media only screen and (max-width: 56.25em) {
-    .skill-set {
-      justify-content: space-evenly; 
-    }
-    .dev-icon{
-        flex-basis: 50%;
-        padding: 0;
-    } 
-    /* .icon{
-        padding-top: 7%;
-    } */
-    .skills-section{
-        margin: 9rem auto;
-    }
-}
-
-.dev-icon p{
-    margin-top: 0.75em;
-}
-
-.dev-icon i{
-    font-size: 6rem;
-    margin-top: 3rem;
-}
-
-.fab{
-    font-family: "Font Awesome 5 Brands";
-}
-
-.fa, .fab, .fad, .fal, .far, .fas, .devicon{
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-}
-
-
-
-.dev-icon:hover{
-    transform: scale(1.2);
-    transition: transform .3s ease-in-out;
-}
-.html:hover{
-    color: coral;
-}
-
-.css:hover{
-    color: blue;
-}
-
-.sql:hover{
-    color: chocolate;
-}
-
-.github:hover{
-    color: white;
-}
-
-.js:hover{
-    color: darkgoldenrod;
-}
-
-.devicon-git-plain:hover{
-    color: yellow;
-}
-
-.vue:hover{
-    color: purple;
-}
-
-.devicon-python-plain:hover{
-    background-image: linear-gradient(blue 0%, blue 25%, blue 50%, yellow 50%, yellow 100%); 
-    background-repeat: repeat; 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
-}
-
-.bootstrap:hover{
-    color:white;
-}
-
-.devicon-visualstudio-plain:hover{
-    color: rgb(58, 58, 160);
-}
-
-     #particles-js canvas {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1; 
-}
-
-
-
-
-
-
-.skills {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative; 
-    background-color:  rgba(20, 20, 20, 0.986);
-}
-
-
 
 nav label {
     position: fixed;
@@ -845,7 +554,66 @@ nav label {
     margin: 1px;
     padding: 1px;
 }
+.fa-sun{
+    color: gold;
+    text-shadow: 0px -2px 1px yellow, 0 0 5px rgba(114, 116, 41, 0.61), 0 -4px 15px rgba(250, 255, 206, 0.87);
+    cursor: pointer;
+}
 
+nav ul li:first-child::after{
+    display: none;
+}
+
+/*--------ICONS FOR LIGHT AND DARK MODE----------------*/
+
+.fa-sun:hover{
+    color: yellow;
+    border: none;
+}
+
+.fa-moon{
+    visibility: hidden;
+    color: black;
+    text-shadow: 0px -2px 1px rgb(77, 77, 75), 0 0 5px rgba(122, 122, 121, 0.767), 0 -4px 15px rgba(255, 255, 255, 0.479);
+    cursor: pointer;
+}
+
+
+
+/*==============INDEX PAGE============*/
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*-----------ANIMATION FOR WAVING HAND---------------*/
+
+.about-title .hand{
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    transition: wave .5s ease-in-out;
+    animation-duration: 1.7s;
+}
+
+@keyframes wave{
+    0%{
+      transform: rotate(40deg);
+    }
+
+    50%{
+      transform: rotate(-50deg);
+    }
+    100%{
+      transform: rotate(50deg);
+    }
+}
+
+.about-title {
+    font-size: 4rem;
+    text-align: center; 
+}
 
 .about-title{
     font-family: "Pacifico", cursive;
@@ -853,7 +621,6 @@ nav label {
     justify-content: center;
     margin-left: 4%;
 }
-
 
 
 .about-title  h1{
@@ -870,6 +637,248 @@ nav label {
         font-size: 4.3rem
     }
 }
+  
+.about-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+    justify-content: center; 
+}
+
+
+@media only screen and (max-width: 50em) {
+    .about-info {
+    flex-direction: column; 
+    } 
+}
+
+.about-img img{
+    border-radius: 50%;
+}
+
+.about-img {
+    width: 30%; 
+}
+
+@media only screen and (max-width: 56.25em) {
+    .about-img {
+        width: 35%; 
+    }
+}
+
+
+@media only screen and (max-width: 50em) {
+    .about-img {
+    width: 65%;
+    align-self: center; 
+    } 
+}
+
+.about-text {
+    width: 50%;
+    margin-left: 7%; 
+}
+
+@media only screen and (max-width: 50em) {
+    .about-text {
+    width: 78%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 0;
+    align-self: center; 
+    } 
+}
+
+.about-details {
+    margin-bottom: 3rem; 
+}
+
+@media only screen and (max-width: 50em) {
+    .about-details {
+        margin-bottom: 0rem; 
+    } 
+}
+
+.about-details p{
+    border-bottom: 2px solid darkblue;
+    margin-bottom: 0;
+    padding-bottom: 1.5rem; 
+}
+
+.about-details p {
+    margin: 3rem 0; 
+}
+
+@media only screen and (max-width: 50em) {
+    .about-details p {
+        margin: 1rem 0; 
+    } 
+}
+
+.about-links {
+    display: flex; 
+}
+
+.about-links ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 50em) {
+    .about__links {
+        justify-content: center;
+        flex-direction: column; 
+    } 
+}
+
+.about-links ul:before {
+    background-color: rgba(44, 10, 231, 0.454);
+    content: '';
+    height: 2px;
+    margin-right: 3rem;
+    width: 8rem; 
+}
+@media only screen and (max-width: 50em) {
+    .about-links ul {
+        margin-top: 3rem;
+        align-self: center; 
+}
+    .about-links ul:before {
+        display: none; 
+    } 
+    .about-links{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.about-icons {
+    font-size: 2rem; 
+}
+
+.about-icons:not(:last-child) {
+    margin-right: 2rem; 
+}
+
+/*=============SKILLS SECTION=============*/
+
+.skills-section{
+    color: aqua;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; 
+    background-color:  rgba(20, 20, 20, 0.986);
+}
+
+
+.skills-title{
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.skill-set{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 6rem;
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.dev-icon{
+    flex-basis: 20%;
+    margin: 2rem 0;
+    padding: 0 2rem; /*Added this line to increase more space between icon*/
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+
+ @media only screen and (max-width: 56.25em) {
+    .skill-set {
+      justify-content: space-evenly; 
+    }
+    .dev-icon{
+        flex-basis: 50%;
+        padding: 0;
+    } 
+    .skills-section{
+        margin: 9rem auto;
+    }
+}
+
+.dev-icon p{
+    margin-top: 0.75em;
+}
+
+.dev-icon i{
+    font-size: 6rem;
+    margin-top: 3rem;
+}
+
+.dev-icon:hover{
+    transform: scale(1.2);
+    transition: transform .3s ease-in-out;
+}
+.html:hover{
+    color: coral;
+}
+
+.css:hover{
+    color: blue;
+}
+
+.sql:hover{
+    color: chocolate;
+}
+
+.github:hover{
+    color: white;
+}
+
+.js:hover{
+    color: darkgoldenrod;
+}
+
+.devicon-git-plain:hover{
+    color: yellow;
+}
+
+.vue:hover{
+    color: purple;
+}
+
+.devicon-python-plain:hover{
+    background-image: linear-gradient(blue 0%, blue 25%, blue 50%, yellow 50%, yellow 100%); 
+    background-repeat: repeat; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.bootstrap:hover{
+    color:white;
+}
+
+.devicon-visualstudio-plain:hover{
+    color: rgb(58, 58, 160);
+}
+
+/*========PROJECTS SECTION==============*/
 
 .projects{
     height: 100vh;
@@ -877,6 +886,11 @@ nav label {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.project-header{
+    font-family: "Pacifico", cursive;
+    margin-top: 2rem;
 }
 
 .project img{
@@ -950,33 +964,7 @@ nav label {
     margin: 2rem auto;
 }
 
-.project-header{
-    font-family: "Pacifico", cursive;
-    margin-top: 2rem;
-}
-
-.fa-sun{
-    color: gold;
-    text-shadow: 0px -2px 1px yellow, 0 0 5px rgba(114, 116, 41, 0.61), 0 -4px 15px rgba(250, 255, 206, 0.87);
-    cursor: pointer;
-}
-
-.fa-sun:hover{
-    color: yellow;
-    border: none;
-}
-
-.fa-moon{
-    visibility: hidden;
-    color: black;
-    text-shadow: 0px -2px 1px rgb(77, 77, 75), 0 0 5px rgba(122, 122, 121, 0.767), 0 -4px 15px rgba(255, 255, 255, 0.479);
-    cursor: pointer;
-}
-
-nav ul li:first-child::after{
-    display: none;
-}
-
+/*===========CONTACT SECTION==============*/
 
 .form-container{
     display: flex;
@@ -995,6 +983,8 @@ nav ul li:first-child::after{
     justify-content: left;
     font-family: "Pacifico", cursive;
 }
+
+/*-------ANIMATION FOR THE ROCKET EFFECT----------*/
 
 .rocket{
     position: relative;
