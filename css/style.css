@@ -538,7 +538,7 @@ nav label {
   }
   
   nav input:checked ~ ul {
-    background-color: rgba(111, 133, 255, 0.37);
+    background-color: rgba(0, 38, 255, 0.37);
     height: 100%;
     padding: 80px 0 10px;
 }
@@ -943,7 +943,7 @@ nav ul li:first-child::after{
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    border: 1px solid cyan;
+    border: 3px solid cyan;
     border-radius: 4rem;
     max-width: 80.5rem;
     width: 90%;
@@ -963,10 +963,6 @@ nav ul li:first-child::after{
     margin: 2rem auto;
 }
 
-.project-links i{
-    text-decoration: none;
-    color: white;
-}
 /*===========CONTACT SECTION==============*/
 
 .form-container{
@@ -989,7 +985,7 @@ nav ul li:first-child::after{
 
 /*-------ANIMATION FOR THE ROCKET EFFECT----------*/
 
-/* .rocket{
+.rocket{
     position: relative;
     animation-name: move;
     animation-duration: .2s;
@@ -1022,7 +1018,7 @@ nav ul li:first-child::after{
     100%{
         right: 10px;
     }
-} */
+}
 
 @media (max-width:56em){
     .social-links{
@@ -1126,9 +1122,4 @@ input:focus, textarea:hover{
         display: flex;
         flex-direction: column;
     }
-}
-
-nav ul li:first-child{
-    background-color: #758da7;
-    border-radius: 2rem;
 }
