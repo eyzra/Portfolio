@@ -1123,3 +1123,8 @@ input:focus, textarea:hover{
         flex-direction: column;
     }
 }
+
+nav ul li:first-child{
+    background-color: #758da7;
+    border-radius: 2rem;
+}
