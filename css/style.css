@@ -985,41 +985,6 @@ nav ul li:first-child::after{
 
 /*-------ANIMATION FOR THE ROCKET EFFECT----------*/
 
-.rocket{
-    position: relative;
-    animation-name: move;
-    animation-duration: .2s;
-    animation-iteration-count: 15;
-    transition: move .2s ease-in;
-}
-
-@keyframes move{
-    0%{
-        left: 20px;
-    }
-    10%{
-        right: 10px;
-    }
-    20%{
-        left: 20px;
-    }
-    30%{
-        right: 10px;
-    }
-    40%{
-        left: 20px;
-    }
-    50%{
-        right: 10px;
-    }
-    90%{
-        left: 20px;
-    }
-    100%{
-        right: 10px;
-    }
-}
-
 @media (max-width:56em){
     .social-links{
         display: none;
