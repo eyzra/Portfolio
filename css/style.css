@@ -99,6 +99,10 @@ a:focus {
 a:active, a:hover {
     outline: 0; 
 }
+
+a{
+    text-decoration: none;
+}
   
 img {
     border: 0;
@@ -321,7 +325,7 @@ i {
     color: rgb(179, 22, 22); 
 }
 
-i:active, i:hover {
+i:active{
     color: #758da7;
 }
 
@@ -565,10 +569,17 @@ nav ul li:first-child::after{
     display: none;
 }
 
+nav ul li:first-child{
+    background-color: #0174f0;
+    border-radius: 2rem;
+    padding: 1.003rem;
+    transition: all 1s ease-in-out;
+}
+
 /*--------ICONS FOR LIGHT AND DARK MODE----------------*/
 
 .fa-sun:hover{
-    color: yellow;
+    color: crimson;
     border: none;
 }
 
@@ -577,6 +588,10 @@ nav ul li:first-child::after{
     color: black;
     text-shadow: 0px -2px 1px rgb(77, 77, 75), 0 0 5px rgba(122, 122, 121, 0.767), 0 -4px 15px rgba(255, 255, 255, 0.479);
     cursor: pointer;
+}
+
+.fa-moon:hover{
+    color: gold;
 }
 
 
@@ -904,7 +919,7 @@ nav ul li:first-child::after{
     max-width: 80.5rem;
     width: 90%;
     border: 2px solid red;
-    border-radius: 4rem;
+    /* border-radius: 4rem; */
 }
 
 .project img:hover{
@@ -951,7 +966,7 @@ nav ul li:first-child::after{
     justify-content: space-evenly;
     text-align: center;
     border: 3px solid cyan;
-    border-radius: 4rem;
+    border-radius: 2rem;
     max-width: 80.5rem;
     width: 90%;
     margin-top: 2rem;
@@ -962,13 +977,21 @@ nav ul li:first-child::after{
     flex-direction: row;
     column-gap: 1rem;
     justify-content: center;
-    background-color: rgba(255, 0, 0, 0.534);
+    background-color: rgba(255, 217, 217, 0.534);
     padding: 2rem;
     border-radius: 3rem;
-    width: 26rem;
+    width: fit-content;
     align-items: center;
     margin: 2rem auto;
 }
+
+.project-links:hover{
+    opacity: 0.7;
+    color: red;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
 
 /*===========CONTACT SECTION==============*/
 
@@ -1096,11 +1119,4 @@ input:focus, textarea:hover{
         display: flex;
         flex-direction: column;
     }
-}
-
-nav ul li:first-child{
-    background-color: #0174f0;
-    border-radius: 2rem;
-    padding: 1.003rem;
-    transition: all 1s ease-in-out;
 }
