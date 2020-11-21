@@ -538,7 +538,7 @@ nav label {
   }
   
   nav input:checked ~ ul {
-    background-color: rgba(0, 38, 255, 0.37);
+    background-color: rgba(93, 156, 250, 0.521);
     height: 100%;
     padding: 80px 0 10px;
 }
@@ -891,6 +891,13 @@ nav ul li:first-child::after{
 .project-header{
     font-family: "Pacifico", cursive;
     margin-top: 2rem;
+    text-align: center
+}
+
+.project-header h3{
+    font-size: 2.4rem;
+    margin-top: 1.5rem;
+    text-decoration: underline coral ;
 }
 
 .project img{
@@ -985,6 +992,8 @@ nav ul li:first-child::after{
 
 /*-------ANIMATION FOR THE ROCKET EFFECT----------*/
 
+
+/**/
 @media (max-width:56em){
     .social-links{
         display: none;
@@ -1090,6 +1099,8 @@ input:focus, textarea:hover{
 }
 
 nav ul li:first-child{
-    background-color: #758da7;
+    background-color: #0174f0;
     border-radius: 2rem;
+    padding: 1.003rem;
+    transition: all 1s ease-in-out;
 }
