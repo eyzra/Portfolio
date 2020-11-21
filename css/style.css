@@ -742,6 +742,12 @@ nav ul li:first-child{
     flex-direction: row;
 }
 
+.about-icons:hover{
+    color: cyan;
+    transform: translateY(1.2rem);
+    transition: all ease-in .5s;
+}
+
 @media only screen and (max-width: 50em) {
     .about__links {
         justify-content: center;
@@ -990,6 +996,10 @@ nav ul li:first-child{
     color: red;
     transition: all .3s ease-in-out;
     cursor: pointer;
+}
+
+.project-links a{
+    color: inherit;
 }
 
 
